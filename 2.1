@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+
+main() {
+    int d1, d2, d3, d4, a;
+    double(g);
+
+    setlocale(LC_CTYPE, "ukr");
+    printf("Введiть 4 числа\n");
+    scanf_s("%d%d%d%d", &d1, &d2, &d3, &d4);
+    if (d1 < d2 && d2 < d3 && d3 < d4)
+    {
+        printf("Числа утворюють неспадну послiдовнiсть\n");
+        a = (d1 + d2 + d3 + d4) / 4;
+        printf("Середнэ арифметичне чисел %d\n",a);
+    }
+    else
+    {
+            if (d1 > d2 && d2 > d3 && d3 > d4)
+        {
+            printf("Числа утворюють спадну послiдовнiсть\n");
+            g = pow((d1 * d2 * d3 * d4), 1 / 4.0);
+            printf("Середня геометричне чисел = %d\n",g);
+        }
+        else
+        {
+            printf("Задайте iншi числа\n");
+        }
+    }
+}
